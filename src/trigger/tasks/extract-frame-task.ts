@@ -16,7 +16,7 @@ export const extractFrameTask = task({
   id: 'extract-frame',
   maxDuration: 120,
   run: async (payload: ExtractFrameTaskPayload): Promise<ExtractFrameTaskResult> => {
-    const { videoUrl, timestamp } = payload
+    const { timestamp } = payload
 
     // Note: FFmpeg frame extraction requires a binary environment
     // Trigger.dev runs this in a managed environment where ffmpeg-static is available

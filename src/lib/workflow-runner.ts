@@ -1,9 +1,6 @@
 import { Node, Edge } from '@xyflow/react'
 import { WorkflowRun, NodeExecutionResult } from '@/types/workflow'
 
-// Check if Trigger.dev is configured
-const hasTriggerKey = () => !!process.env.TRIGGER_SECRET_KEY
-
 interface ExecutionContext {
   nodes: Node[]
   edges: Edge[]
@@ -29,7 +26,7 @@ function getExecutionLayers(nodes: Node[], edges: Edge[]): Node[][] {
   })
 
   const layers: Node[][] = []
-  let remaining = new Set(nodes.map((n) => n.id))
+  const remaining = new Set(nodes.map((n) => n.id))
 
   while (remaining.size > 0) {
     // Pick all nodes whose in-degree is 0

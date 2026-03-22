@@ -27,7 +27,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useWorkflowStore } from "@/store/workflow-store";
 import { runWorkflow } from "@/lib/workflow-runner";
-import { UserButton, SignIn, SignInButton } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 
 interface SavedWorkflow {
   id: string;
@@ -62,7 +62,6 @@ export function Header() {
   const redo = useWorkflowStore((state) => state.redo);
   const historyIndex = useWorkflowStore((state) => state.historyIndex);
   const historyLength = useWorkflowStore((state) => state.history.length);
-  const pushToHistory = useWorkflowStore((state) => state.pushToHistory);
 
   // Computed values for button states
   const canUndoNow = historyIndex >= 0;
