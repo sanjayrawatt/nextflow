@@ -2,7 +2,14 @@
 
 A pixel-perfect clone of [Krea.ai's](https://krea.ai) workflow builder, built as part of the Galaxy.ai Full-Stack Developer Assignment.
 
-![NextFlow Screenshot](https://via.placeholder.com/800x400?text=NextFlow+Workflow+Builder)
+## Live Demo
+
+- **Production:** [https://nextflow-sigma.vercel.app](https://nextflow-sigma.vercel.app)
+- **Preview:** [https://nextflow-git-master-sanjay-singh-rawats-projects.vercel.app](https://nextflow-git-master-sanjay-singh-rawats-projects.vercel.app)
+
+## GitHub Repository
+
+Source code available at: [https://github.com/sanjayrawatt/nextflow](https://github.com/sanjayrawatt/nextflow)
 
 ## Overview
 
@@ -61,7 +68,7 @@ NextFlow is a visual workflow builder that allows users to create, manage, and e
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/nextflow.git
+   git clone https://github.com/sanjayrawatt/nextflow.git
    cd nextflow
    ```
 
@@ -214,20 +221,6 @@ nextflow/
 
 The `vercel.json` is already configured for optimal deployment.
 
-## Screenshots
-
-### Main Canvas
-
-The workflow canvas with nodes and connections.
-
-### Sample Workflow
-
-Pre-built workflow demonstrating all 6 node types.
-
-### History Panel
-
-Execution history with expandable node-level details.
-
 ## Contributing
 
 This project was built for the Galaxy.ai assignment. Feel free to fork and extend!
@@ -238,4 +231,4 @@ MIT License - feel free to use this code for your own projects.
 
 ---
 
-Built with ❤️ by Sanjay Singh Rawat
+Built by Sanjay Singh Rawat
