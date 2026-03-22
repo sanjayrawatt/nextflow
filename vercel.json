@@ -1,0 +1,8 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "functions": {
+    "src/app/api/execute-task/route.ts": {
+      "maxDuration": 90
+    }
+  }
+}
